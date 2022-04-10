@@ -1,0 +1,36 @@
+
+:root{
+    --main_color: #1E1E1E;
+    --font_color: #e1e1e1;
+}
+
+
+body{
+    background-color: #1E1E1E;
+}
+
+title{
+    size: 10in;
+    
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--font_color);
+}
+
+p{
+    font-family: sans-serif;
+    font-size: medium;
+    color: var(--font_color)
+}
+
+.amonugus{
+    align-content: center;
+    border: #1E1E1E;
+    border-style: dashed;
+    border-radius: 20%;
+    border-width: 3px;
+    border-spacing: 1in;
+    padding-top: 15%;
+}

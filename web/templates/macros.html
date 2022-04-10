@@ -1,0 +1,39 @@
+{% macro menu() -%}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="menu">
+        <span class="divider"></span>
+
+        <a href="{{ url_for("index") }}">Main</a>
+
+        <span class="divider"></span>
+
+        <div class="dropdown">
+            <button class="dropdown-button">
+                <a href={{ url_for("projects") }}>Projects <i class="fa fa-caret-down"></i></a>
+            </button>
+            <div class="dropdown-content">
+                <a href={{ url_for("projects_zote") }}>Zote</a>
+            </div>
+        </div>
+
+        <span class="divider"></span>
+
+        <a href="{{ url_for("about") }}">About</a>
+
+        <span class="divider"></span>
+
+        <div class="dropdown">
+            <button class="dropdown-button">Links <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="https://github.com/TheOnlyWalrus">Github</a>
+                <a href="https://www.bungie.net/en/ClanV2?groupid=2123911">Destiny Clan</a>
+            </div>
+        </div>
+
+        <span class="divider"></span>
+
+        <a href="{{ url_for("water") }}">Water</a>
+
+        <span class="divider"></span>
+    </div>
+{%- endmacro %}

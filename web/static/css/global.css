@@ -1,0 +1,151 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    overflow: hidden;
+    background-color: #2F2F2F;
+    border-radius: 8px;
+    justify-content: center;
+    display: flex;
+}
+
+.menu a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+}
+
+.menu a:hover {
+    background-color: #272727;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-button {
+    position: relative;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    background-color: #2F2F2F;
+    transition: background-color 0.4s ease;
+}
+
+.dropdown-button a {
+    padding: 0;
+}
+
+.dropdown-button:hover {
+    background-color: #272727;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E1E1E;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    float: none;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    font-size: 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #181818;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+    align-items: center;
+    word-wrap: normal;
+    width: auto;
+    height: auto;
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    max-width: 750px;
+    text-align: center;
+    color: white;
+    padding: 6px 18px;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    color: slateblue;
+}
+
+.card-text-divider {
+    width: auto;
+    height: 0;
+    border-top: 2px solid #5A008A;
+    border-bottom: 2px solid #5A008A;
+}
+
+.divider {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 0;
+    border-left: 2px solid #5A008A;
+    border-right: 2px solid #5A008A;
+    padding-bottom: 1600px;
+    margin-bottom: -1600px;
+}
+
+body {
+    background: rgb(167, 0, 255);
+    background: linear-gradient(90deg, rgba(167, 0, 255, 1) 0%, rgba(94, 76, 255, 1) 40%, rgba(0, 255, 184, 1) 100%);
+    background-size: 200% 200%;
+    animation: GradientMove 10s ease infinite;
+    -moz-animation: GradientMove 10s ease infinite;
+    -webkit-animation: GradientMove 10s ease infinite;
+}
+
+@keyframes GradientMove {
+    0% {background-position: 0 100%}
+    50% {background-position: 100% 0}
+    100% {background-position: 0 100%}
+}
+
+@-moz-keyframes GradientMove {
+    0% {background-position: 0 100%}
+    50% {background-position: 100% 0}
+    100% {background-position: 0 100%}
+}
+
+@-webkit-keyframes GradientMove {
+    0% {background-position: 0 100%}
+    50% {background-position: 100% 0}
+    100% {background-position: 0 100%}
+}
